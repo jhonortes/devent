@@ -1,0 +1,51 @@
+{
+  "requires": true,
+  "lockfileVersion": 1,
+  "dependencies": {
+    "cordova-android": "^5.1.1",
+    "cordova-plugin-app-version": "^0.1.9",
+    "cordova-plugin-battery-status": "~1.2.4",
+    "cordova-plugin-camera": "~2.4.1",
+    "cordova-plugin-device": "^2.0.2",
+    "cordova-plugin-dialogs": "~1.3.3",
+    "cordova-plugin-file": "~4.0.0",
+    "cordova-plugin-geolocation": "~2.4.3",
+    "cordova-plugin-globalization": "~1.0.7",
+    "cordova-plugin-googlemaps": "2.3.10",
+    "cordova-plugin-inappbrowser": "~1.7.1",
+    "cordova-plugin-media-capture": "^1.4.3",
+    "cordova-plugin-nativestorage": "git+https://github.com/GillesC/cordova-plugin-nativestorage.git",
+    "cordova-plugin-network-information": "~1.3.3",
+    "cordova-plugin-vibration": "~2.1.5",
+    "cordova-plugin-whitelist": "1.1.0",
+    "cordova.plugins.diagnostic": "^4.0.10",
+    "minimist": "^1.2.0",
+    "pgb-api": "^1.1.1",
+    "sequelize-cli": "^4.1.1",
+    "xml2js": "^0.4.19"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-battery-status": {},
+      "cordova-plugin-camera": {},
+      "cordova-plugin-media-capture": {
+        "CAMERA_USAGE_DESCRIPTION": " ",
+        "MICROPHONE_USAGE_DESCRIPTION": " ",
+        "PHOTOLIBRARY_USAGE_DESCRIPTION": " "
+      },
+      "cordova-plugin-dialogs": {},
+      "cordova-plugin-file": {},
+      "cordova-plugin-geolocation": {},
+      "cordova-plugin-globalization": {},
+      "cordova-plugin-inappbrowser": {},
+      "cordova-plugin-network-information": {},
+      "cordova-plugin-vibration": {},
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-googlemaps": {
+        "API_KEY_FOR_ANDROID": "AIzaSyAYgxKpB6Im3BLd_cKg3OVKjz4AvGA24uQ",
+        "API_KEY_FOR_IOS": "AIzaSyAYgxKpB6Im3BLd_cKg3OVKjz4AvGA24uQ"
+      }
+    },
+    "platforms": []
+  }
+}

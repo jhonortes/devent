@@ -1,0 +1,32 @@
+<div class="modal">
+	<header class="bar bar-header bar-positive"> 
+		<h1 class="title">Traffic State</h1>
+		<div class="button button-clear" ng-click="trafficHideClick()">
+			<span class="icon ion-close"></span>
+		</div>
+	</header>
+	<content has-header="true">
+		<br><br>
+		<br><br>
+		<p style="padding:1em">Your Location now is traffic? do you want to add Advisory that this location is now traffic?</p>
+		<br>
+		<div style="padding:1em">
+			<div class="form-inline">
+				<label>Traffic Status
+				<select name="trafstat" class="form-controll">
+					<option value="Light" >Light</option>
+					<option value="Moderate" >Moderate</option>
+					<option value="LightModerate" >Light to Moderate</option>
+					<option value="Heavy" >Heavy</option>
+				</select> 
+				</label>
+			</div>
+		</div>
+		<div>			
+  			<button class="button button-positive button-block" ng-click="trafficacceptClick()" >Yes</button>
+  			<button class="button button-negative button-block" ng-click="trafficHideClick()">Cancel</button>
+		</div>
+	</content>
+	<footer>
+	</footer>
+</div>

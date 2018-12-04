@@ -1,0 +1,50 @@
+<div class="modal">
+	<header class="bar bar-header bar-positive"> 
+		<h1 class="title">Traffic State</h1>
+		<div class="button button-clear" ng-click="trafficHideClick()">
+			<span class="icon ion-close"></span>
+		</div>
+	</header>
+	<content has-header="true">
+		<br><br>
+		<br><br>
+ 
+		<div style="padding:1em">
+			
+
+      <label class="item item-input" id="nevent-input1">
+        <span class="input-label">From</span>
+      </label>
+      <label class="item item-input" id="nevent-input11">
+        <input type="text" name="froms" placeholder=""  value="">
+      </label>
+
+      <label class="item item-input" id="nevent-input1">
+        <span class="input-label">To : </span>
+      </label>
+      <label class="item item-input" id="nevent-input11">
+        <input type="text" name="tos" placeholder=""  value="">
+      </label>
+
+		<div style="padding:1em" class="hide">
+			<div class="form-inline">
+				<label>Traffic Status
+				<select name="trafstat" class="form-controll">
+					<option value="Light" >Light</option>
+					<option value="Moderate" >Moderate</option>
+					<option value="LightModerate" >Light to Moderate</option>
+					<option value="Heavy" >Heavy</option>
+				</select> 
+				</label>
+			</div>
+		</div>
+
+		</div>
+		<div>			
+  			<button class="button button-positive button-block" ng-click="trafficacceptClick()" >Submit</button>
+  			<button class="button button-negative button-block" ng-click="trafficHideClick()">Cancel</button>
+		</div>
+	</content>
+	<footer>
+	</footer>
+</div>

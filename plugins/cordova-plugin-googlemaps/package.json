@@ -1,0 +1,81 @@
+{
+  "_from": "cordova-plugin-googlemaps",
+  "_id": "cordova-plugin-googlemaps@2.3.10",
+  "_inBundle": false,
+  "_integrity": "sha512-g8xX99P8KYM1FttX3Ha40c3WlhR/ZCGuuGAIvf9qR42brINcopuirXlLpiC4c4HfTQ22iL73CYsdaq7WFMhaUg==",
+  "_location": "/cordova-plugin-googlemaps",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-googlemaps",
+    "name": "cordova-plugin-googlemaps",
+    "escapedName": "cordova-plugin-googlemaps",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-googlemaps/-/cordova-plugin-googlemaps-2.3.10.tgz",
+  "_shasum": "4275f59ecbbbf4ea8baf73b9c53b978203c1baba",
+  "_spec": "cordova-plugin-googlemaps",
+  "_where": "C:\\Phonegap\\DEvent",
+  "author": {
+    "name": "Masashi Katsumata, Hirbod Mirjavadi"
+  },
+  "bugs": {
+    "url": "https://github.com/mapsplugin/cordova-plugin-googlemaps/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-googlemaps",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "dependencies": {
+    "minimist": "~1.2.0",
+    "xml2js": "~0.4.19"
+  },
+  "deprecated": false,
+  "description": "Google Maps native SDK for Android and iOS",
+  "engines": [
+    {
+      "name": "cordova-android",
+      "version": ">=5.1.0"
+    },
+    {
+      "name": "cordova-ios",
+      "version": ">=4.9.0"
+    },
+    {
+      "name": "apple-xcode",
+      "version": ">=9.0.0"
+    },
+    {
+      "name": "apple-ios",
+      "version": ">=10.0.0"
+    }
+  ],
+  "homepage": "https://github.com/mapsplugin/cordova-plugin-googlemaps",
+  "keywords": [
+    "google",
+    "maps",
+    "geo",
+    "google maps",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "Apache 2.0",
+  "name": "cordova-plugin-googlemaps",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mapsplugin/cordova-plugin-googlemaps.git"
+  },
+  "version": "2.3.10"
+}

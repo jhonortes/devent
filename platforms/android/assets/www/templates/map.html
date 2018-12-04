@@ -1,0 +1,11 @@
+<ion-view title="{{ uname==''? 'Welcome Guest' : 'DEvent' }}" id="page1">
+  	<ion-content padding="false" scrollable="false" class="has-header">
+  		<div id="map" style="height:100%; position: absolute;width:100%;background-color:gray"></div>
+      <div  style="position: absolute;left:10px;bottom:7px;">
+    	<label>Click Stars icon to view event details</label> <br />
+      </div>
+      <div  style="position: absolute;right:50px;bottom:7px;">
+        <button class="button button-negative button-small" ng-Click="reportClick()" >Report</button>
+      </div>
+	</ion-content>
+</ion-view>

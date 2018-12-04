@@ -1,0 +1,30 @@
+<div class="modal">
+	<header class="bar bar-header bar-positive"> 
+		<h1 class="title">Event Details</h1>
+		<div class="button button-clear" ng-click="mhide()">
+			<span class="icon ion-close"></span>
+		</div>
+	</header>
+	<content has-header="true">
+		<br /><br />
+		<div  style="padding:1em;">
+			<label class="item item-input">
+				<span class="input-label">Event : <label id="event_name" >{{ edetails.event_name }}</label>
+				</span>
+			</label>
+			<label class="item item-input" >
+				<span class="input-label">Date Start: <label id="event_date">{{ edetails.event_date }}</label>
+				</span>
+			</label>
+			<label class="item item-input" >
+				<span class="input-label">Date End: <label id="event_date">{{ edetails.event_end }}</label>
+				</span>
+			</label>
+			<label class="item item-input" >
+				<span class="input-label">Address : <label id="event_address">{{ edetails.event_address }}</label>
+				</span>
+			</label>
+			<button class="button button-positive" ng-click="redirect();" >Set Destination</button>
+		</div>
+	</content>
+</div>

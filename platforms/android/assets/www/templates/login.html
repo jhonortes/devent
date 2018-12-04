@@ -1,0 +1,25 @@
+<ion-view title="Login" id="page3">
+  <ion-content padding="true" class="has-header" style="padding:20px">
+    <div id="login-markdown3" style="text-align:center;" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:30px;padding:10px;">DEvent</p>
+      <br>
+    </div>
+    <form id="loginform" class="list">
+      <label class="item item-input" id="login-input3">
+        <span class="input-label">Username</span>
+        <input type="text" name="uname" placeholder="User Name"  value="user111">
+      </label>
+      <label class="item item-input" id="login-input4">
+        <span class="input-label">Password</span>
+        <input type="password" name="upass" placeholder="User Password" value="user111">
+      </label>
+    <input type="submit" id="login-button" class="button button-positive button-block" value="Sign In" />
+    <button type="button" id="login-button1" ui-sref="drawer.signup()" class="button button-block">Sign Up</button>
+    </form>
+    <center>
+      <ion-spinner icon="spiral" class="hide" id="loading"></ion-spinner>
+      <br />
+      <label id="asd">{{testerr}}</label>
+    </center>
+  </ion-content>
+</ion-view>

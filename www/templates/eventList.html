@@ -1,0 +1,29 @@
+<ion-view title="Event List" id="page2">
+  <ion-content padding="false" class="has-header">
+    <ion-list id="eventList-list4">
+    	
+      	<ion-item id="eventList-item" class="item " ng-repeat="x in eventList_item">
+
+			<button class="button button-positive" ng-Click="viewDetails('{{ x.ID }}')" style="float:right;">Details</button>
+			<div class="col text-left" >
+				<p> {{ x.eventname }} </p>
+				<div class="col col-60">
+					<p>Date & Time : </p>
+					<p>Start: {{ x.date_start}}  {{ x.time_start }}</p>
+					<p>End: {{ x.date_end}}  {{ x.time_end }} </p>
+					<p>Address: </p>
+					<p>{{ x.address }}</p>
+				</div>
+			</div>
+
+  		</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
+
+<!--
+<label class="item item-input" id="login-input4">
+		<input type="text" placeholder="Search">
+		<button class="button button-positive" style="float:right;">Find</button>
+	</label>
+!>

@@ -1,0 +1,31 @@
+<ion-view title="{{ uname==''? 'Welcome Guest' : 'DEvent' }}" id="page1">
+  	<ion-content padding="false" scrollable="false" class="has-header">
+  		<div id="map_nav" style="height:100%;line-height:100%; position: absolute;z-index: 0; width:100%;background-color:gray">
+  		</div>
+      <div  style="position: absolute;right:20px;top:20px;text-align:right"> 
+        <div>
+        <label>Fastes Route</label>
+        <div style="margin-left:5px;height:20px;width:20px;background-color:rgba(17, 42, 222, 1);float:right;border-width:1px;border-style: solid;"></div><br />
+        </div>
+        <div>
+          <label>Main Route</label>
+          <div style="margin-left:5px;margin-top:3px;height:20px;width:20px;background-color:rgba(76, 220, 61, 1);float:right;border-width:1px;border-style: solid;"></div>
+        </div>
+      </div>  
+      <div  style="position: absolute;right:50px;bottom:7px;">
+        <button class="button button-negative button-small hide" ng-Click="reportClick()" >Report</button>
+        <button class="button button-positive button-small" ng-Click="reportCancel()" >Cancel</button>
+      </div>
+      <div  style="position: absolute;left:10px;bottom:7px;">
+        <label>Estemated Time : </label> <br />
+        <div>
+          <label>{{ distance2_ }} km, {{distance2_total}} hr/s away</label>
+          <div style="margin-right:5px;height:20px;width:20px;background-color:rgba(17, 42, 222, 1);float:left;border-width:1px;border-style: solid;"></div><br />
+        </div>
+        <div>
+          <label>{{ distance_ }} km, {{distance_total}} hr/s away</label>
+          <div style="margin-right:5px;margin-top:3px;height:20px;width:20px;background-color:rgba(76, 220, 61, 1);float:left;border-width:1px;border-style: solid;"></div>
+        </div>
+      </div>
+	</ion-content>
+</ion-view>

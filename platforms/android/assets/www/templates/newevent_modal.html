@@ -1,0 +1,70 @@
+<div class="modal">
+  <header class="bar bar-header bar-positive"> 
+    <h1 class="title">Report State</h1>
+    <div class="button button-clear" ng-click="report_new_event_HideClick()">
+      <span class="icon ion-close"></span>
+    </div>
+  </header>
+  <content has-header="true" padding="false">
+
+<ion-view title="New Event" >
+  <ion-content padding="true"  draggable="false" class="has-header" style="padding:20px">
+    <div id="nevent-markdown3" style="text-align:center;" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:30px;padding:10px;">Report New Event</p>
+      <br>
+    </div>
+    <form  class="list">
+      <label class="item item-input" id="nevent-input1">
+        <span class="input-label">Event Name</span>
+      </label>
+      <label class="item item-input" id="nevent-input11">
+        <input type="text" name="eventname" placeholder=""  value="">
+      </label>
+      <label class="item item-input" id="nevent-input2">
+        <span class="input-label">Event Content</span>
+      </label>
+      <label class="item item-input" id="nevent-input22">
+        <textarea id="eventcontent" placeholder="" value=""></textarea>
+      </label>
+      <label class="item item-input" id="nevent-input3">
+        <span class="input-label">Event Address</span>
+      </label>
+      <label class="item item-input" id="nevent-input33">
+        <input type="text" name="eventadd"  value="">
+      </label>
+      <label class="item item-input" id="nevent-input4">
+        <span class="input-label">Event Date Start</span>
+      </label>
+      <label class="item item-input" id="nevent-input44">
+        <input type="date" name="eventdstart"  value="">
+      </label>
+      <label class="item item-input" id="nevent-input5">
+        <span class="input-label">Event Time Start</span>
+      </label>
+      <label class="item item-input" id="nevent-input55">
+        <input type="time" name="evettstart"  value="">
+      </label>
+      <label class="item item-input" id="nevent-input6">
+        <span class="input-label">Event Date End</span>
+      </label>
+      <label class="item item-input" id="nevent-input66">
+        <input type="date" name="eventdend"  value="">
+      </label>
+      <label class="item item-input" id="nevent-input7">
+        <span class="input-label">Event Time End</span>
+      </label>
+      <label class="item item-input" id="nevent-input77">
+        <input type="time" name="eventend"  value="">
+      </label> 
+      <br />
+    <input type="submit" id="neventsubmit" class="button button-positive button-block" ng-click="submit()" value="Submit"  />
+    </form>
+    <center>
+      <ion-spinner icon="spiral" class="hide" id="loading"></ion-spinner>
+      <br />
+    </center>
+  </ion-content>
+</ion-view>
+
+  </content>
+</div>

@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "DEvent",
+  "short_name": "DEvent",
+  "version": "com.devent.phonegap",
+  "description": "Hello World  DEvent.",
+  "author": "Team DEvent",
+  "icons": [],
+  "start_url": "index.html"
+}

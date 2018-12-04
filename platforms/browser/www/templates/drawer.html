@@ -1,0 +1,42 @@
+<ion-side-menus enable-menu-with-back-views="false">
+
+  <ion-side-menu-content >
+    <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button></ion-nav-back-button>
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="side">
+    <!-- kani ang nag handle sa view sa mainviw -->
+    </ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu  side="left"  id="side">
+    <ion-header-bar class="bar-stable">
+      <div class="title">Hi {{uname=="" ? 'Guest' : uname }} </div>
+    </ion-header-bar>
+    <ion-content padding="false" class="side-menu-left has-header ">
+      <ion-list id="hiGuest-list1">
+        <ion-item class="item-icon-left" id="hiGuest-list-item1" ui-sref="drawer.map()" menu-close="">Map
+          <i class="icon ion-map"></i>
+        </ion-item>
+         <div ng-switch="uauthen">
+          <ion-item class="item-icon-left" id="hiGuest-list-item2" ng-switch-when="1"  ui-sref="drawer.nevent()" menu-close="">Create Event
+            <i class="icon ion-plus"></i>
+          </ion-item>
+         </div>
+        <ion-item class="item-icon-left" id="hiGuest-list-item2" ui-sref="drawer.eventList()" menu-close="">Event List
+          <i class="icon ion-ios-list-outline"></i>
+        </ion-item>
+        <div ng-switch="uauthen">
+          <ion-item id="drawersignin" class="item-icon-left"  ng-switch-when="0" ui-sref="drawer.login()" menu-close="">
+          Sign In <i class="icon ion-key"></i></ion-item>
+          <ion-item id="drawerlogout" class="item-icon-left"  ng-switch-when="1" ng-click="logout()" menu-close="">
+          Sign out <i class="icon ion-power"></i></ion-item>
+        </div>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+
+</ion-side-menus>
